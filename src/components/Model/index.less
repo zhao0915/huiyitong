@@ -1,0 +1,56 @@
+.Model {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10001;
+  .box {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .title {
+    padding: 40px 30px 0;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .content {
+    padding: 20px 30px 40px;
+    line-height: 40px;
+    font-size: 32px;
+    color: #999;
+  }
+
+  .btns {
+    border-top: 1px solid #ccc;
+
+    .btn {
+      width: 50%;
+      line-height: 100px;
+      text-align: center;
+      font-size: 36px;
+      color: #666;
+
+      &.cancel {
+        border-right: 1px solid #ccc;
+      }
+
+      &.success {
+        button {
+          border-radius: none;
+          outline: none;
+          background: none;
+          border: none;
+          font-weight: bold;
+          line-height: 100px;
+          color: rgb(60, 197, 30);
+        }
+      }
+    }
+  }
+}
